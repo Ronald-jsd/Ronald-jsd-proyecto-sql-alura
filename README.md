@@ -13,13 +13,18 @@ Este proyecto simula un sistema de ventas y facturación para una empresa, donde
    - Cada ítem se asocia a un producto aleatorio con su cantidad y precio.
 
 2. **Procedimientos Almacenados**:  
-   - `sp_venta`: Crea una factura con productos aleatorios y los inserta en la base de datos.
-   - `SP_FACTURACION`: Calcula el total de ventas por fecha y lo inserta en la tabla `facturacion`.
+   - `sp_venta`:
+   - Crea una factura con productos aleatorios y los inserta en la base de datos.
+   - `SP_FACTURACION`:
+   - Calcula el total de ventas por fecha y lo inserta en la tabla `facturacion`.
 
 3. **Triggers**:  
-   - `TG_FACTURACION_INSERT`: Se activa después de insertar un ítem en la tabla `items`, recalculando el total de la facturación.
-   - `TG_FACTURACION_DELETE`: Se activa después de eliminar un ítem, actualizando el total de la facturación.
-   - `TG_FACTURACION_UPDATE`: Se activa después de actualizar un ítem, recalculando la facturación.
+   - `TG_FACTURACION_INSERT`:
+   - Se activa después de insertar un ítem en la tabla `items`, recalculando el total de la facturación.
+   - `TG_FACTURACION_DELETE`:
+   - Se activa después de eliminar un ítem, actualizando el total de la facturación.
+   - `TG_FACTURACION_UPDATE`:
+   - Se activa después de actualizar un ítem, recalculando la facturación.
 
 4. **Tabla de Facturación**:  
    - La tabla `facturacion` contiene los totales de ventas por fecha.
@@ -45,6 +50,7 @@ Este proyecto simula un sistema de ventas y facturación para una empresa, donde
 
 ## Requisitos
 
-- **Base de Datos MySQL**: Este proyecto está diseñado para funcionar con MySQL y usa procedimientos almacenados y triggers.
+- **Base de Datos MySQL**:
+- Este proyecto está diseñado para funcionar con MySQL y usa procedimientos almacenados y triggers.
 
   
