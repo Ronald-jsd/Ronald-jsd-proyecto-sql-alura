@@ -20,11 +20,11 @@ Este proyecto simula un sistema de ventas y facturación para una empresa, donde
 
 3. **Triggers**:  
    - `TG_FACTURACION_INSERT`:
-   - Se activa después de insertar un ítem en la tabla `items`, recalculando el total de la facturación.
+     Se activa después de insertar un ítem en la tabla `items`, recalculando el total de la facturación.
    - `TG_FACTURACION_DELETE`:
-   - Se activa después de eliminar un ítem, actualizando el total de la facturación.
+     Se activa después de eliminar un ítem, actualizando el total de la facturación.
    - `TG_FACTURACION_UPDATE`:
-   - Se activa después de actualizar un ítem, recalculando la facturación.
+     Se activa después de actualizar un ítem, recalculando la facturación.
 
 4. **Tabla de Facturación**:  
    - La tabla `facturacion` contiene los totales de ventas por fecha.
@@ -51,6 +51,6 @@ Este proyecto simula un sistema de ventas y facturación para una empresa, donde
 ## Requisitos
 
 - **Base de Datos MySQL**:
-- Este proyecto está diseñado para funcionar con MySQL y usa procedimientos almacenados y triggers.
+  Este proyecto está diseñado para funcionar con MySQL y usa procedimientos almacenados y triggers.
 
   
